@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="http://www.hightownresidences.org.in//assets/images/favicon.ico" type="image/x-icon">
+        <meta name="google-site-verification" content="Sx_fiPkPHrw9XXfBEWZBtc7QrWPKdaq_3-N8a8MDYEg" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <title>Dummy</title>
+        <meta name="description" content="Silverglades Hightown Residences is the best residential property in sector 28, Gurgaon presenting's 3 & 4 BHK residential apartments with a healthy atmosphere & security system." />
+        <link rel="canonical" href="#">
+        <style>
+            body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+        
+            #popup-container {
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 20px;
+              background-color: #fff;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+              z-index: 1000;
+            }
+        
+            #popup-close {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              cursor: pointer;
+            }
+        
+            #overlay {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.5);
+              z-index: 999;
+            }
+        
+            #form-container {
+              text-align: center;
+            }
+          </style>
+    </head>
+    <body>
+
+                            <!-- 
+                                popup form code
+                                    -->
+                                    <div id="overlay"></div>
+
+                                    <div id="popup-container">
+                                      <div id="popup-close" onclick="closePopup()">✕</div>
+                                      <div id="form-container">
+                                        <h2>Express Your Interest</h2>
+                                        <form id="popup-form" onsubmit="submitForm(); return false;" role="form" name="google-sheet" method="post" class="contactform">
+                                                <div class="form-group">
+                                                    <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                                                    <label for="value-name">Name</label>
+                                                    <input type="text" name="name" id="value-name" class="form-control" placeholder="Enter Your Name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                                                    <label for="value-email">Email</label>
+                                                    <input type="email" name="email" id="value-email" class="form-control" placeholder="Enter email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="value-country">Country</label>
+                                                    <select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" id="value-country" class="form-control country" required="required">
+                    <option value="">Country</option></select>
+                                                </div>
+                                                <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+                                                <div class="form-group">
+                                                    <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                                                    <div class="input-group">
+                                                        <label for="value-phone">Code , Mobile No.</label>
+                                                       
+                                                        <input type="hidden" name="phonecodeVal" id="phonecodeVal" value="" />
+                                                        <input type="tel" name="phone" placeholder="Phone No." id="value-phone" class="form-control" value="" required>
+                                                    </div>
+                                                </div>
+                
+                                                <input type="hidden" name="event_cat" class="event_cat" value="ProjectFormSubmit">
+                
+                                                
+                                                <input type="hidden" name="deviceInfo" value="">
+                
+                                                <input type="hidden" name="comment" value="I need to know more about this project." />
+                                                <div class="text-center"><input type="submit" name="Submit" class="btn btn-primary btn-block addenqsubmit" value="Submit"></div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <!-- 
+                                popup form code end
+                                    -->
+        <header>
+            <nav class="navbar shadow fixed-top" id="mainNav">
+                <div class="micro-menu">
+                    <a class="micro-site-hamburger">
+                <span class="layer top"></span>
+                <span class="layer mid"></span>
+                <span class="layer btm"></span>
+              </a>
+                    <div class="micro-site-panel">
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li><a href="index.html" class="nav-link js-scroll-trigger">Home</a></li>
+                                <li><a href="#description" class="nav-link js-scroll-trigger">Overview</a></li>
+                                <li><a href="#ClubHouse" class="nav-link js-scroll-trigger">Hightown Club</a></li>
+                                <li><a href="#Prices" class="nav-link js-scroll-trigger">Price List</a></li>
+                                <li><a href="#Amenities" class="nav-link js-scroll-trigger">Amenities</a></li>
+                                <li><a href="#Features" class="nav-link js-scroll-trigger">Features</a></li>
+                                <li><a href="#Specifications" class="nav-link js-scroll-trigger">Specifications</a></li>
+                                <li><a href="#Localities" class="nav-link js-scroll-trigger">Localities</a></li>
+                                <li><a href="#MasterPlan" class="nav-link js-scroll-trigger">Master Plan</a></li>
+                                <li><a href="#FloorPlan" class="nav-link js-scroll-trigger">Floor Plan</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/builder-logo.svg" height="70" width="100%" class="img-fluid" alt="Silverglades"></a>
+    
+               
+            </nav>
+        </header>
+        <main>
+
+
+
+            <!-- <form role="form" name="google-sheet" method="post" class="contactform popup">
+                <div class="popup-content">
+                <div class="form-group">
+                    <div class="contact_heading">EXPRESS YOUR INTEREST</div>
+                                <div class="messages" id="contact-div" style="display: none;">
+                                    <a href="#" class="closeMessage"></a>
+                                    <p id="post_status"></p>
+                                </div>
+                    <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                    <label for="value-name">Name</label>
+                    <input type="text" name="name" id="value-name" class="form-control" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                    <label for="value-email">Email</label>
+                    <input type="email" name="email" id="value-email" class="form-control" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="value-country">Country</label>
+                    <select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" id="value-country" class="form-control country" required="required">
+<option value="">Country</option></select>
+                </div>
+                <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+                <div class="form-group">
+                    <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                    <div class="input-group">
+                        <label for="value-phone">Code , Mobile No.</label>
+                       
+                        <input type="hidden" name="phonecodeVal" id="phonecodeVal" value="" />
+                        <input type="tel" name="phone" placeholder="Phone No." id="value-phone" class="form-control" value="" required>
+                    </div>
+                </div>
+
+                <input type="hidden" name="event_cat" class="event_cat" value="ProjectFormSubmit">
+
+                
+                <input type="hidden" name="deviceInfo" value="">
+
+                <input type="hidden" name="comment" value="I need to know more about this project." />
+                <div class="text-center"><input type="submit" name="Submit" class="btn btn-primary btn-block addenqsubmit" value="Submit"></div>
+            </div>
+            </form> -->
+
+
+            <section class="bnr_sec">
+                <div class="shape-1">
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+              <path d="M0.00,49.98 C150.00,300.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+            </svg>
+                </div>
+            </section>
+    
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="top_inner">
+                                <h1>Silverglades Hightown Residences</h1>
+                                <div class="h4 text-primary">Construction-Linked Plan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="rt_form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 offset-lg-8">
+                            <div class="form_container">
+                                <div class="form_no">
+                                    <a href="tel:+911149500026"><i class="fas fa-phone-alt"></i> <span>+91 11 4950 0026</span></a>
+                                </div>
+                                <div class="contact_heading">EXPRESS YOUR INTEREST</div>
+                                <div class="messages" id="contact-div" style="display: none;">
+                                    <a href="#" class="closeMessage"></a>
+                                    <p id="post_status"></p>
+                                </div>
+    
+                                <form role="form" name="google-sheet" method="post" class="contactform">
+                                    <div class="form-group">
+                                        <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                                        <label for="value-name">Name</label>
+                                        <input type="text" name="name" id="value-name" class="form-control" placeholder="Enter Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                                        <label for="value-email">Email</label>
+                                        <input type="email" name="email" id="value-email" class="form-control" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="value-country">Country</label>
+                                        <select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" id="value-country" class="form-control country" required="required">
+        <option value="">Country</option></select>
+                                    </div>
+                                    <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+                                    <div class="form-group">
+                                        <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                                        <div class="input-group">
+                                            <label for="value-phone">Code , Mobile No.</label>
+                                           
+                                            <input type="hidden" name="phonecodeVal" id="phonecodeVal" value="" />
+                                            <input type="tel" name="phone" placeholder="Phone No." id="value-phone" class="form-control" value="" required>
+                                        </div>
+                                    </div>
+    
+                                    <input type="hidden" name="event_cat" class="event_cat" value="ProjectFormSubmit">
+    
+                                    
+                                    <input type="hidden" name="deviceInfo" value="">
+    
+                                    <input type="hidden" name="comment" value="I need to know more about this project." />
+                                    <div class="text-center"><input type="submit" name="Submit" class="btn btn-primary btn-block addenqsubmit" value="Submit"></div>
+                                </form>
+    
+                                <div class="pol_con">
+                                    <div class="our_pro"><span>We Deliver</span></div>
+                                    <ul>
+                                        <li><i class="far fa-check-circle"></i><span>Assured<br> Privacy</span></li>
+                                        <li><i class="fas fa-headset"></i><span>Expert<br> Consultation</span></li>
+                                        <li><i class="fas fa-car-alt"></i><span>Free<br> Site Visit</span></li>
+                                        <li><i class="fas fa-rupee-sign"></i><span>Best<br> Price</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="desc_con lazy" id="description" src="">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-11">
+                            <div class="p_logo"><img data-src="assets/images/project-logo.svg" height="120" width="160" class="lazy project-logo-sec" alt="Silverglades Hightown Residences"></div>
+                            <h2>Hightown Residences Gurgaon</h2>
+                            <p>Set amidst 5 acres, Silverglades Hightown Residences in Sushant Lok 1, sector 28 , Gurgaon is bold, artistic, and classic, and the ultimate in luxury living. 260 luxury homes (3 & 4 BHK Apartments) in 3 lofty towers packed with
+                                a wide range of best-in-class amenities and facilities.</p>
+                            <p>Exotic housing address in Gurgaon unveils next level lifestyle bustled with modern amenities, green ambience, futuristic designs, new security system and more perks to ameliorate the lifestyle completely.</p>
+                            <p>Hightown Residences Gurugram by Silverglades Group one of the finest builders with extensive years of experience. New housing project in Gurgaon sector 28 welcomes all home buyers to meet an extravagant luxury <strong> 3 BHK & 4 BHK with servant quarters.</strong>                            Avail dense comfort, healthy environment and more to change the living style.</p>
+                            <p>Silverglades Hightown Residences is one of the best residential communities in Gurgaon where the classic definition of luxury meets modern comforts. Where planning meets function. Where you and your family members feel secure and
+                                away from the daily humdrum.</p>
+    
+                            <div class="plist justify-content-lg-center">
+                                <div class="icon_items"><i class="fas fa-home"></i>Developer <span>Silverglades Group</span></div>
+                                <div class="icon_items"><i class="fas fa-location-arrow"></i>Location <span>Sector 28, Gurgaon</span></div>
+                                <div class="icon_items"><i class="fas fa-rupee-sign"></i>Price <span>5.25 Crore Onwards</span></div>
+                                <div class="icon_items"><i class="fas fa-chart-pie"></i>Sizes <span>2150 Sq. Ft. - 3300 Sq. Ft.</span></div>
+                                <div class="icon_items"><i class="fas fa-paint-roller"></i>Project Status <span>Excavation Commenced</span></div>
+                                <div class="icon_items"><i class="fas fa-city"></i>Site Area <span>4.8 Acres</span></div>
+                                <div class="icon_items"><i class="fas fa-bed"></i>Bedroom<span>3 & 4 BHK (with servant quarters)</span></div>
+                                <div class="icon_items"><i class="fas fa-key"></i>Completion <span>2023</span></div>
+                                <div class="icon_items"><i class="fas fa-gavel"></i>Rera No. <span> RC/REP/HARERA/GGM/406/138/2020/22</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c_sec" id="ClubHouse">
+                <div class="ameni_main">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-md-12">
+                            <div class="h2 text-center">The Hightown Club</div>
+                            <p class="text-center">Land of celebration highly styled clubhouse top up with new facilities for entertainment, recreation and enjoyment. Meet the cream of the crop of Silverglades Hightown Residences every day with your family for a next level enjoyment.</p>
+                            <p class="text-center">This clubhouse in Hightown Residences Gurgaon is located on the lobby level and is planned as a perfect place to relax, unwind, or have fun with friends and family.</p>
+                            <div class="slide_bg">
+                                <div class="club_slide">
+                                    <figure>
+                                        <a class="gal1" href="" data-fancybox="gallery" data-caption="Drop Off Zone"><img src="" class="lazy img-fluid gal1" width="1000" height="475" alt="Drop Off Zone">
+                      </a>
+                                    </figure>
+                                    <figure>
+                                        <a class="gal2" href="" data-fancybox="gallery" data-caption="Entrance Lobby"><img src="" class="lazy img-fluid gal2" width="1000" height="475" alt="Entrance Lobby">
+                      </a>
+                                    </figure>
+                                    <figure>
+                                        <a class="gal3" href="" data-fancybox="gallery" data-caption="Cafe"><img src="" class="lazy img-fluid gal3" width="1000" height="475" alt="Cafe">
+                      </a>
+                                    </figure>
+                                    <figure>
+                                        <a class="gal4" href="" data-fancybox="gallery" data-caption="Swimming Pool"><img src="" class="lazy img-fluid gal4" width="1000" height="475" alt="Swimming Pool">
+                      </a>
+                                    </figure>
+                                    <figure>
+                                        <a class="gal5" href="" data-fancybox="gallery" data-caption="Mini Movie Theatre"><img src="" class="lazy img-fluid gal5" width="1000" height="475" alt="Mini Movie Theatre">
+                      </a>
+                                    </figure>
+                                    <figure>
+                                        <a class="gal6" href="" data-fancybox="gallery" data-caption="Opti Golf"><img src="" class="lazy img-fluid gal6" width="1000" height="475" alt="Opti Golf">
+                      </a>
+                                    </figure>
+                                    <figure>
+                                        <a class="gal7" href="" data-fancybox="gallery" data-caption="Gymnasium"><img src="" class="lazy img-fluid gal7" width="1000" height="475" alt="Gymnasium">
+                      </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="feat_sec" id="Features">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="h2">GOING THE EXTRA MILE</div>
+                            <div class="feat_main">
+                                <ul>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/smart-home.svg" width="62" height="70" class="lazy img-fluid" alt="Smart Home Technology Pack"> <span>Smart Home Technology Pack</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/air-filter.svg" width="62" height="70" class="lazy img-fluid" alt="Air Filtration System PM 2.5"> <span>Air Filtration System PM 2.5</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/germ-resistant.svg" width="62" height="70" class="lazy img-fluid" alt="Germ-Resistant Wall Paint"> <span>Germ-Resistant Wall Paint</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/vrv-ac.svg" width="62" height="70" class="lazy img-fluid" alt="VRV Air Conditioning"> <span>VRV Air Conditioning</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/heat-reflective-glass.svg" width="62" height="70" class="lazy img-fluid" alt="Heat Reflective Glass"> <span>Heat Reflective Glass</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/daily-need-store.svg" width="62" height="70" class="lazy img-fluid" alt="Daily needs Store in Complex"> <span>Daily needs Store in Complex</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/service-elevator.svg" width="62" height="70" class="lazy img-fluid" alt="Separate Service Elevator for Staff & Domestic Help"> <span>Separate Service Elevator for Staff & Domestic Help</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/staff-room.svg" width="62" height="70" class="lazy img-fluid" alt="Domestic Staff Room in Every Apartment"> <span>Domestic Staff Room in Every Apartment</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/extra-storage.svg" width="62" height="70" class="lazy img-fluid" alt="Extra Storage Space in Kitchens"> <span>Extra Storage Space in Kitchens</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/sanitization.svg" width="62" height="70" class="lazy img-fluid" alt="Sanitization & Temperature Check at Entry Points"> <span>Sanitization & Temperature Check at Entry Points</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/video-conference.svg" width="62" height="70" class="lazy img-fluid" alt="Video Conference Ready Rooms in Clubhouse"> <span>Video Conference Ready Rooms in Clubhouse</span>
+                                    </li>
+                                    <li>
+                                        <img data-src="http://www.hightownresidences.org.in/assets/icon/high-speed-internet.svg" width="62" height="70" class="lazy img-fluid" alt="High Speed Internet and IT Support"> <span>High Speed Internet and IT Support</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="price_sec" id="Prices">
+                <div class="container-xl">
+                    <div class="row justify-content-lg-center">
+                        <div class="col-lg-10">
+                            <div class="price_inner">
+                                <div class="h2">Silverglades Hightown Residences - Price List</div>
+                                <p>Hightown Residences Gurgaon Prices Starting at 5.25 Crore. (ONWARDS WITH GST EXTRA) and avail on table discounts.</p>
+                                <p>Now you understand, how Hightown Residences is the best deal for you. Only here you will get a premium luxury apartment at the best price.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-1">
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+              <path d="M0.00,49.98 C150.00,300.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+            </svg>
+                </div>
+            </section>
+    
+            <section class="plist_con">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="pitems">
+                                <div class="pbg_col">
+    
+                                    <small>Price</small>
+                                    <div class="plist_line">
+                                        <i class="fas fa-rupee-sign"></i> <span>5.25</span> <small>Cr.</small> <sub>Onwards</sub>
+                                    </div>
+    
+                                    <div class="item_line">
+                                        <p>Unit Type <span> 3 BHK A</span></p>
+                                    </div>
+                                    <div class="item_line">
+                                        <p>Unit Size <span> 2150 SQ.FT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="pitems">
+                                <div class="pbg_col">
+                                    <small>Price</small>
+                                    <div class="plist_line">
+                                        <i class="fas fa-rupee-sign"></i> <span>8.25</span> <small>Cr.</small> <sub>Onwards</sub>
+                                    </div>
+                                    <div class="item_line">
+                                        <p>Unit Type <span>3 BHK C</span> </p>
+                                    </div>
+                                    <div class="item_line">
+                                        <p>Unit Size <span> 2500 SQ.FT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="pitems">
+                                <div class="pbg_col">
+                                    <small>Price</small>
+                                    <div class="plist_line">
+                                        <i class="fas fa-rupee-sign"></i> <span>8.30</span> <small>Cr.</small> <sub>Onwards</sub>
+                                    </div>
+                                    <div class="item_line">
+                                        <p>Unit Type <span> 4 BHK</span></p>
+                                    </div>
+                                    <div class="item_line">
+                                        <p>Unit Size <span> 3300 SQ.FT</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-12 text-right mb-5 mt-n2">
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#popup_price">More Price List</button>
+            </div> -->
+                    </div>
+                </div>
+            </section>
+    
+            <section class="consul_area">
+                <div class="container">
+                    <div class="row no-gutters justify-content-lg-center">
+                        <div class="col-lg-12">
+                            <div class="h2 text-center mb-4">How We works</div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="consul__inner no_bdr">
+                                <a href="javascript:void(0);" class="stretched-link" data-toggle="modal" data-target="#downloadForm" onclick='schedule_click("Download","Download","Download");'><i class="fas fa-download"></i></a> Download
+                                <span>Click here to download the latest information about the project.</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="consul__inner">
+                                <a href="javascript:void(0);" class="stretched-link" data-toggle="modal" data-target="#consulForm" onclick='schedule_click("Button Consult","Button Consult","Button Consult");'><i class="far fa-handshake"></i></a> Consultant
+                                <span>Consult With Our Dedicated Executives For Every Query In Mind.</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="consul__inner">
+                                <a href="javascript:void(0);" class="stretched-link" data-toggle="modal" data-target="#SitevisitForm" onclick='schedule_click("Site Visit","Site Visit","Site Visit");'><i class="fas fa-car-alt"></i></a> Site Visit
+                                <span>Get A Deep Knowledge Of The Site With Our Executive.</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="consul__inner no_bdr">
+                                <a href="javascript:void(0);" class="stretched-link" data-toggle="modal" data-target="#BestdealForm" onclick='schedule_click("Best Deal","Best Deal","Best Deal");'><i class="fas fa-gifts"></i></a> Best Deal
+                                <span>Enjoy Special Festive Or Seasonal Offers.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="modal fade" id="downloadForm" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span>&times;</span>
+                  </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="sch_modal">
+                                    <div class="h4"><i class="fas fa-download"></i> Download</div>
+                                    <p>Allow us to help you with more downloadable information. By filling this form you will get a mail with given below downloadable items:</p>
+                                    <ul>
+                                        <li>Master Plan</li>
+                                        <li>Floor Plan</li>
+                                        <li>Unit Plan</li>
+                                        <li>Location Map</li>
+                                    </ul>
+                                    <form role="form" name="google-sheet" method="post" class="contactform">
+                                        <input type="hidden" name="event_cat" class="event_cat" value="DownloadFormSubmit">
+                                        <div class="sch_form">
+                                            <div class="sch_form_heading">EXPRESS YOUR INTEREST</div>
+                                            <div class="messages" id="contact-div" style="display: none;">
+                                                <a href="#" class="closeMessage"></a>
+                                                <p id="post_status"></p>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                                                <input type="text" name="name" class="form-control" placeholder="Enter Your Name" value="" required>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                                                <input type="email" name="email" class="form-control" placeholder="Enter email" value="">
+                                            </div>
+    
+                                            <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+    
+                                            <div class="form-group">
+                                                <select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" class="form-control country " required="required">
+            <option value="">Country</option>
+        </select>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend"><span class="input-group-text phonecode"></span></div>
+                                                    <input type="tel" name="phone" placeholder="Phone No." class="form-control" value="" required>
+                                                </div>
+                                            </div>
+    
+                                            <input type="hidden" name="utm_source" value="ipaddress223.190.83.82">
+                                            <input type="hidden" name="comment" value="I need to know more about this project." />
+                                            <div class="text-center">
+                                                <input type="submit" name="Submit" class="btn btn-primary btn-block we-work-form" id="special-submit" value="REQUEST A CALL">
+                                            </div>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="modal fade" id="consulForm" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span>&times;</span>
+                  </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="sch_modal">
+                                    <div class="h4"><i class="far fa-handshake"></i>Consultant</div>
+                                    <p>We are trusted by buyers, builders, and sellers. We are an authorized channel partner for Silverglades Hightown Residences.</p>
+                                    <ul>
+                                        <li>Unit facing, floor rise, and apartment type.</li>
+                                        <li>Home loan, down payment and payment plan.</li>
+                                        <li>Or any other questions in your mind.</li>
+                                    </ul>
+                                    <form role="form" name="google-sheet4" method="post" class="contactform">
+                                        <input type="hidden" name="event_cat" class="event_cat" value="ConsultantFormSubmit">
+                                        <div class="sch_form">
+                                            <div class="sch_form_heading">EXPRESS YOUR INTEREST</div>
+                                            <div class="messages" id="contact-div" style="display: none;">
+                                                <a href="#" class="closeMessage"></a>
+                                                <p id="post_status"></p>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                                                <input type="text" name="name" class="form-control" placeholder="Enter Your Name" value="" required>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                                                <input type="email" name="email" class="form-control" placeholder="Enter email" value="">
+                                            </div>
+    
+                                            <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+    
+                                            <div class="form-group">
+                                                <select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" class="form-control country " required="required">
+            <option value="">Country</option>
+        </select>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-prepend"><span class="input-group-text phonecode"></span></div> -->
+                                                    <input type="tel" name="phone" placeholder="Phone No." class="form-control" value="" required>
+                                                </div>
+                                            </div>
+    
+                                            <input type="hidden" name="utm_source" value="ipaddress223.190.83.82">
+                                            <input type="hidden" name="comment" value="I need to know more about this project." />
+                                            <div class="text-center">
+                                                <input type="submit" name="Submit" class="btn btn-primary btn-block we-work-form" id="special-submit" value="REQUEST A CALL">
+                                            </div>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    
+    
+                <div class="modal fade" id="SitevisitForm" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span>&times;</span>
+                  </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="sch_modal">
+                                    <div class="h4"><i class="fas fa-download"></i> Site Visit</div>
+                                    <p>The site visit is very important for homebuyers to enhance the understanding of real construction practice. With our doorstep site visit service you will get a deep understanding about:-</p>
+                                    <ul>
+                                        <li>Construction Quality</li>
+                                        <li>Actual sizes of the rooms</li>
+                                        <li>Site Area</li>
+                                        <li>Familiarity with neighborhood</li>
+                                    </ul>
+                                    <form role="form" name="google-sheet5" method="post" class="contactform">
+                                        <input type="hidden" name="event_cat" class="event_cat" value="SiteVisitFormSubmit">
+                                        <div class="sch_form">
+                                            <div class="sch_form_heading">EXPRESS YOUR INTEREST</div>
+                                            <div class="messages" id="contact-div" style="display: none;">
+                                                <a href="#" class="closeMessage"></a>
+                                                <p id="post_status"></p>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                                                <input type="text" name="name" class="form-control" placeholder="Enter Your Name" value="" required>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                                                <input type="email" name="email" class="form-control" placeholder="Enter email" value="">
+                                            </div>
+    
+                                            <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+    
+                                            <div class="form-group">
+                                                <select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" class="form-control country " required="required">
+            <option value="">Country</option>
+        </select>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-prepend"><span class="input-group-text phonecode"></span></div> -->
+                                                    <input type="tel" name="phone" placeholder="Phone No." class="form-control" value="" required>
+                                                </div>
+                                            </div>
+    
+                                            <input type="hidden" name="utm_source" value="ipaddress223.190.83.82">
+                                            <input type="hidden" name="comment" value="I need to know more about this project." />
+                                            <div class="text-center">
+                                                <input type="submit" name="Submit" class="btn btn-primary btn-block we-work-form" id="special-submit" value="REQUEST A CALL">
+                                            </div>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="modal fade" id="BestdealForm" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span>&times;</span>
+                  </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="sch_modal">
+    
+                                    <div class="h4"><i class="fas fa-download"></i> Best Deal</div>
+                                    <p>We know that you are here for the best deal and so we are. By filling this form you will get the best deals by:-</p>
+                                    <ul>
+                                        <li>Best Deals</li>
+                                        <li>Periodic/Festival Offers</li>
+                                        <li>Best unit in your budget</li>
+                                    </ul>
+                                    <form role="form" name="google-sheet6" method="post" class="contactform">
+                                        <input type="hidden" name="event_cat" class="event_cat" value="BestDealFormSubmit">
+                                        <div class="sch_form">
+                                            <div class="sch_form_heading">EXPRESS YOUR INTEREST</div>
+                                            <div class="messages" id="contact-div" style="display: none;">
+                                                <a href="#" class="closeMessage"></a>
+                                                <p id="post_status"></p>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                                                <input type="text" name="name" class="form-control" placeholder="Enter Your Name" value="" required>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                                                <input type="email" name="email" class="form-control" placeholder="Enter email" value="">
+                                            </div>
+    
+                                            <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+    
+                                            <div class="form-group">
+                                                <select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" class="form-control country " required="required">
+            <option value="">Country</option>
+        </select>
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-prepend"><span class="input-group-text phonecode"></span></div> -->
+                                                    <input type="tel" name="phone" placeholder="Phone No." class="form-control" value="" required>
+                                                </div>
+                                            </div>
+    
+                                            <input type="hidden" name="utm_source" value="ipaddress223.190.83.82">
+                                            <input type="hidden" name="comment" value="I need to know more about this project." />
+                                            <div class="text-center">
+                                                <input type="submit" name="Submit" class="btn btn-primary btn-block we-work-form" id="special-submit" value="REQUEST A CALL">
+                                            </div>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    
+            </section>
+    
+            <section class="ameni_main" id="Amenities">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="h2 text-center">HIGHTOWN RESIDENCES GURGAON- HUB FOR NEW ACTIVITIES</div>
+                            <p class="text-center">Silverglades Hightown Residences bring a perfect platform for celebration by indulging in the wide swimming pool, fully equipped gym, spa service, reading room, clubhouse and more amenities inside the project to take care of your
+                                entertainment and fun.</p>
+                            <p class="text-center">Silverglades Hightown community has been planned as a good ecosystem with a wide range of activities for different age groups & interests.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="ameni_slide">
+                                <figure><img src="" class="lazy img-fluid amenities1" alt="Swimming Pool" width="763px" height="468px"></figure>
+                                <figure><img src="" class="lazy img-fluid amenities2" alt="Kids Play Area" width="763px" height="468px"></figure>
+                                <figure><img src="" class="lazy img-fluid amenities3" alt="Basket Ball Court" width="763px" height="468px"></figure>
+                                <figure><img src="" class="lazy img-fluid amenities4" alt="Reflexology Garden" width="763px" height="468px"></figure>
+                                <figure><img src="" class="lazy img-fluid amenities5" alt="Meditation Zone" width="763px" height="468px"></figure>
+                                <figure><img src="" class="lazy img-fluid amenities6" alt="Walkway" width="763px" height="468px">
+                                    </a>
+                                </figure>
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ameni_inner">
+                                <div class="h5">Amenities Like</div>
+                                <ul>
+                                    <li>Coffeeshop Restaurant & Lounge</li>
+                                    <li>Swimming Pools (Adults &amp; Kids)</li>
+                                    <li>Fitness Center with Premium Equipment</li>
+                                    <!-- <li>Heath Club with Spa</li>
+                    <li>Basketball Court</li>
+                    <li>Squash Court</li>
+                    <li>Badminton Court</li> -->
+                                    <li>Game Room</li>
+                                    <li>Opti Golf</li>
+                                    <li>Children Play Area / Creche</li>
+                                    <li>Banquet Hall</li>
+                                    <li>Medical Assist Room</li>
+                                    <li>Kids Splash Pool</li>
+                                    <li>Semi-Covered Play Areas</li>
+                                    <li>Play Courts</li>
+                                    <li>Multi-Purpose Lawn</li>
+                                    <li>Refleology Garden</li>
+                                    <li>Winter Garden</li>
+                                    <li>Jogging Track</li>
+                                    <li>Seating Enclaves</li>
+                                    <li>Air-Conditioned Lobbies</li>
+                                    <li>High Speed Elevators</li>
+                                    <li>Higher Ceiling Height </li>
+                                    <li>Pre-Wired TV &amp; Wi-Fi Internet</li>
+                                    <li>Intercom Facility </li>
+                                    <li>Piped Gas Provision</li>
+                                    <li>Disability Access-Braille Signs</li>
+                                    <li>Driver Waiting Area</li>
+                                    <li>Car Wash Area</li>
+                                    <li>Pet-Friendly Zones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+    
+            <section class="spe_sec" id="Specifications">
+                <div class="container-xl">
+                    <div class="h2 text-center">Specifications</div>
+                    <p class="text-center">The right use of material, best flooring, wall paints, titles, wardrobes and more are loaded to meet better specifications in Hightown Residences Gurgaon. Avail Modern Spacious Apartments with Air Conditioning and Smartphone enabled Home
+                        Automation technology and Air Purification system and VRV Airconditioning System.</p>
+                    <p class="text-center">Silverglades Hightown Gurgaon is a future-ready home where the developer has taken care of everything while planning specifications to deliver ease and comfort in every nook & corner of the home.</p>
+                    <div class="specific_slider">
+                        <div class="specific_slider__list">
+                            <div class="h5">LIVING &amp; DINING ROOM</div>
+                            <div class="specific_slider__list__items">
+                                <ul>
+                                    <li><strong>FLOOR</strong>Premium imported marble</li>
+                                    <li><strong>WALLS</strong>Acrylic emulsion paint on pop punning</li>
+                                    <li><strong>CEILING</strong>Acrylic emulsion paint</li>
+                                    <li><strong>DOORS</strong>Polished veneer door</li>
+                                    <li><strong>WINDOWS</strong>Anodized aluminium / UPVC frames with reflective glass for energy efficiency</li>
+                                    <li><strong>FIXTURES / FITTINGS</strong>VRV AC system with individual control units (Daiken / Hitachi / Panasonic or equivalent)</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="specific_slider__list">
+                            <div class="h5">KITCHEN</div>
+                            <div class="specific_slider__list__items">
+                                <ul>
+                                    <li><strong>FLOOR</strong>Anti-slip vitrified tiles</li>
+                                    <li><strong>WALLS</strong>Combination of tiles and acrylic emulsion paint</li>
+                                    <li><strong>CEILING</strong>Acrylic emulsion paint</li>
+                                    <li><strong>DOORS</strong>Polished veneer door</li>
+                                    <li><strong>WINDOWS</strong>Anodized aluminium / UPVC frames with reflective glass for energy efficiency</li>
+                                    <li><strong>FIXTURES / FITTINGS</strong>Granite stone counter. Imported CP fittings & double bowl SS sink with drain board, hob & chimney, exhaust fan</li>
+                                    <li><strong>OTHERS</strong>Modular kitchen cabinetry</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="specific_slider__list">
+                            <div class="h5">MASTER BEDROOM</div>
+                            <div class="specific_slider__list__items">
+                                <ul>
+                                    <li><strong>FLOOR</strong>High grade laminated wooden flooring</li>
+                                    <li><strong>WALLS</strong>Acrylic emulsion paint on pop punning</li>
+                                    <li><strong>CEILING</strong>Acrylic emulsion paint</li>
+                                    <li><strong>DOORS</strong>Polished veneer door</li>
+                                    <li><strong>WINDOWS</strong>Anodized aluminium / UPVC frames with reflective glass for energy efficiency</li>
+                                    <li><strong>FIXTURES / FITTINGS</strong>VRV AC system with individual control units (daiken / Hitachi / Panasonic or equivalent)</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="specific_slider__list">
+                            <div class="h5">MASTER TOILET</div>
+                            <div class="specific_slider__list__items">
+                                <ul>
+                                    <li><strong>FLOOR</strong>Premium imported marble</li>
+                                    <li><strong>WALLS</strong>Combination of marble / tiles and acrylic emulsion paint</li>
+                                    <li><strong>CEILING</strong>Gypsum board ceiling, painted in acrylic emulsion paint</li>
+                                    <li><strong>DOORS</strong>Polished veneer door</li>
+                                    <li><strong>WINDOWS</strong>Anodized aluminium / UPVC frames with reflective glass for energy efficiency</li>
+                                    <li><strong>FIXTURES / FITTINGS</strong>Shower partitions, vanities with mirror, towel rail, towel ring, toilet paper holder, robe hook</li>
+                                    <li><strong>OTHERS</strong>Single lever CP fittings, health faucet, his / her wash basins & wall-hung WC (Kohler / Roca / Grohe or equivalent)</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="specific_slider__list">
+                            <div class="h5">BEDROOMS</div>
+                            <div class="specific_slider__list__items">
+                                <ul>
+                                    <li><strong>FLOOR</strong>High grade laminated wooden flooring</li>
+                                    <li><strong>WALLS</strong>Acrylic emulsion paint on pop punning</li>
+                                    <li><strong>CEILING</strong>Acrylic emulsion paint</li>
+                                    <li><strong>DOORS</strong>Polished veneer door</li>
+                                    <li><strong>WINDOWS</strong>Anodized aluminium / UPVC frames with reflective glass for energy efficiency</li>
+                                    <li><strong>FIXTURES / FITTINGS</strong>VRV AC system with individual control units (Daiken / Hitachi / Panasonic or equivalent)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specific_slider__list">
+                            <div class="h5">TOILETS</div>
+                            <div class="specific_slider__list__items">
+                                <ul>
+                                    <li><strong>FLOOR</strong>Premium marble / tiles</li>
+                                    <li><strong>WALLS</strong>Combination of tiles and acrylic emulsion paint</li>
+                                    <li><strong>CEILING</strong>Gypsum board ceiling, painted in acrylic emulsion paint</li>
+                                    <li><strong>DOORS</strong>Polished veneer door</li>
+                                    <li><strong>WINDOWS</strong>Anodized aluminium / UPVC frames with reflective glass for energy efficiency</li>
+                                    <li><strong>FIXTURES / FITTINGS</strong>Shower partitions, vanities with mirror, towel rail, towel ring, toilet paper holder, robe hook</li>
+                                    <li><strong>OTHERS</strong>Single lever CP fittings, health faucet, wash basin & wall-hung wc (Kohler / Roca / Grohe or equivalent)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specific_slider__list">
+                            <div class="h5">Balcony / DECKS</div>
+                            <div class="specific_slider__list__items">
+                                <ul>
+                                    <li><strong>FLOOR</strong>Deck flooring / anti-skid tiles</li>
+                                    <li><strong>WALLS</strong>Plaster with acrylic emulsion</li>
+                                    <li><strong>DOORS</strong>Anodized aluminium / UPVC frames with reflective glass for energy efficiency</li>
+                                    <li><strong>FIXTURES / FITTINGS</strong>Utility balcony to have the provision of electrical and water connectivity</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specific_slider__list">
+                            <div class="h5">DOMESTIC QUARTER</div>
+                            <div class="specific_slider__list__items">
+                                <ul>
+                                    <li><strong>FLOOR</strong>Vitrified / anti-skid tiles</li>
+                                    <li><strong>WALLS</strong>Acrylic emulsion paint</li>
+                                    <li><strong>DOORS</strong>Flush shutters</li>
+                                    <li><strong>WINDOWS</strong>Anodized aluminium / UPVC frames with reflective glass for energy efficiency</li>
+                                    <li><strong>OTHERS</strong>Toilet with basic CP fittings, wash basin, spout</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="loca_sec lazy" id="Localities" data-src="">
+                <div class="loca_sec__inner">
+                    <div class="h4">Location Advantage </div>
+                    <p>Project is situated in a planned location sector 28, Gurgaon SUSHANT LOK, opposite Laburnum Apartments, near Galleria Market Gurugram. one of the prime areas highly developed offering smooth distance to the day to day services such as
+                        the bank, hospital, clinics, local market and mall. Further, its easy connectivity to Delhi and IGI Airport gleans all the attention. Closeness to IT hub MNC’s for new job opportunities.</p>
+                    <div class="loca_list">
+                        <ul>
+                            <li><strong>Dining & Shopping </strong>Galleria Market, Cross Point Mall, Sector 29 F&B Hub</li>
+                            <li><strong>Entertainment </strong>DLF City Club, DLF Golf Club, Appu Ghar</li>
+                            <li><strong>Schools </strong>The Shri Ram School, Shiv Nadar, Mothers Pride, Kinder Valley</li>
+                            <li><strong>Hospitals </strong>Fortis Memorial, Max Hospital, OSL Hospital</li>
+                            <li><strong>Hotels </strong>The Westin, Park Plaza, Marriott Courtyard, Crowne Plaza</li>
+                            <li><strong>Cultural Hubs </strong>Kingdom of Dreams, Epicenter</li>
+                            <li><strong>Connectivity </strong>MG Road, NH8, Golf Course Road, IFFCO Metro Station</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="sec_mp" id="MasterPlan">
+                <div class="container-xl">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="h2 text-center">Master Plan of Silverglades Hightown Residences</div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="mp_bg">
+                                <figure class="mb-0"><a id="masterimage" href="" data-fancybox="masterplan" data-caption="Master Plan of Silverglades Hightown Residences"><img src="" id="master_plan_img" width="1078" height="496" class="img-fluid lazy" alt="Master Plan of Silverglades Hightown Residences">
+                      <figcaption>Master Plan of Silverglades Hightown Residences</figcaption>
+                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="sec_fp" id="FloorPlan">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="h2 text-center">Floor Plan of Silverglades Hightown Residences</div>
+                            <p class="text-center">Smart floor plan for its utmost use- Ventilated kitchen, smart dining area, capacious bedrooms, easily accessible balconies and more</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="flr_video">
+                                <div class="btn_area">
+                                    <div class="video-btn"> <a class="play-btn fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/reujcj0rZ3c?autoplay=0" rel="0"><i class="fas fa-play"></i></a>
+                                        <div class="spinner-eff">
+                                            <div class="spinner-circle circle-1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="floor_plan">
+                                <figure class="flr_list"><a class="flrsection1" href="" data-fancybox="gallery" data-caption="3 BHK Type A - 2150 Sq.Ft."><img src="" width="495" height="300" class="img-fluid lazy flrsection1" alt="3 BHK Type A - 2150 Sq.Ft.">
+                      <figcaption>
+                        <div class="fname">3 BHK Type A - 2150 Sq.Ft.</div>
+                        <div class="fsub">Carpet Area <span>1195 Sq.Ft.</span></div>
+                        <div class="fsub">Exclusive Area <span>1701 Sq.Ft. </span></div>
+                        <div class="fsub">Super Area <span>2150 Sq.Ft.</span></div>
+                      </figcaption>
+                    </a>
+                                </figure>
+    
+                                <figure class="flr_list"><a class="flrsection2" href="" data-fancybox="gallery" data-caption="3 BHK Type B - 2150 Sq.Ft."><img src="" class="img-fluid lazy flrsection2" alt="3 BHK Type B - 2150 Sq.Ft.">
+                      <figcaption>
+                        <div class="fname">3 BHK Type B - 2150 Sq.Ft.</div>
+                        <div class="fsub">Carpet Area <span>1238 Sq.Ft.</span></div>
+                        <div class="fsub">Exclusive Area <span>1701 Sq.Ft. </span></div>
+                        <div class="fsub">Super Area <span>2150 Sq.Ft.</span></div>
+                      </figcaption>
+                    </a>
+                                </figure>
+    
+                                <figure class="flr_list"><a class="flrsection3" href="" data-fancybox="gallery" data-caption="3 BHK Type C - 2500 Sq.Ft."><img src="" class="img-fluid lazy flrsection3" alt="3 BHK Type C - 2500 Sq.Ft.">
+                      <figcaption>
+                        <div class="fname">3 BHK Type C - 2500 Sq.Ft.</div>
+                        <div class="fsub">Carpet Area <span>1447 Sq.Ft.</span></div>
+                        <div class="fsub">Exclusive Area <span>1943 Sq.Ft. </span></div>
+                        <div class="fsub">Super Area <span>2500 Sq.Ft.</span></div>
+                      </figcaption>
+                    </a>
+                                </figure>
+    
+                                <figure class="flr_list"><a class="flrsection4" href="" data-fancybox="gallery" data-caption="4 BHK - 3300 Sq.Ft."><img src="" class="img-fluid lazy flrsection4" alt="4 BHK - 3300 Sq.Ft.">
+                      <figcaption>
+                        <div class="fname">4 BHK - 3300 Sq.Ft.</div>
+                        <div class="fsub">Carpet Area <span>1980 Sq.Ft.</span></div>
+                        <div class="fsub">Exclusive Area <span>2558 Sq.Ft. </span></div>
+                        <div class="fsub">Super Area <span>3300 Sq.Ft.</span></div>
+                      </figcaption>
+                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="new_sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="h2 text-center">Silverglades Hightown Residences Well Under Way</div>
+                            <p class="pb-3 text-center">Silverglades has planned the possession for the units to be handed over by 2023. So, the construction and quality development of Hightown Residences is underway in full swing.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="callb">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 callb__border">
+                            <div class="callb__left">
+                                <figure><img src="assets/images/decision-corner.svg" class="img-fluid lazy decision-corner" width="406" height="200" alt="DECISION CORNER"></figure>
+                                <div class="h4 font-weight-bold">DECISION CORNER</div>
+                                <div class="h5">Do You Want a deal of Investment? Just let us know!!</div>
+                                <div class="h6 font-weight-bold">Let Us Serve You Beyond</div>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video_config" onclick=''>Contact Us!</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="callb__right">
+                                <figure><img src="http://www.hightownresidences.org.in/assets/images/video-conf.png" class="img-fluid lazy video-conf" width="406" height="200" alt="Video Call Presentation"></figure>
+                                <div class="h4 font-weight-bold">Video Conferencing With Experts</div>
+                                <div class="h6">We won’t stop till we answer all your queries!</div>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video_config" onclick=''>Contact Us!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <div class="modal fade" id="video_config" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="h4 pb-3 text-center">Schedule Video Meeting Now</div>
+                            <form role="form" name="google-sheet2" method="post" class="contactform">
+                                <div class="form-group">
+                                    <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                                    <label for="value-name">Name</label>
+                                    <input type="text" name="name" id="value-name" class="form-control" placeholder="Enter Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                                    <label for="value-email">Email</label>
+                                    <input type="email" name="email" id="value-email" class="form-control" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="value-country">Country</label>
+                                    <select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" id="value-country" class="form-control country" required="required">
+    <option value="">Country</option></select>
+                                </div>
+                                <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+                                <div class="form-group">
+                                    <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                                    <div class="input-group">
+                                        <label for="value-phone">Code , Mobile No.</label>
+                                       
+                                        <input type="hidden" name="phonecodeVal" id="phonecodeVal" value="" />
+                                        <input type="tel" name="phone" placeholder="Phone No." id="value-phone" class="form-control" value="" required>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" name="event_cat" class="event_cat" value="ProjectFormSubmit">
+
+                                
+                                <input type="hidden" name="deviceInfo" value="">
+
+                                <input type="hidden" name="comment" value="I need to know more about this project." />
+                                <div class="text-center"><input type="submit" name="Submit" class="btn btn-primary btn-block addenqsubmit" value="Submit"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </main>
+       <footer>
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-12">
+             <div class="copyright">
+               Copyright &copy; www.hightownresidences.org.in 2020 | All Rights Reserved | <a href="#">Disclaimer</a> | <a href="#" target="_blank" title="DLF Sector 63 Gurgaon">DLF Sector 63 Gurgaon</a> | <a href="#" target="_blank" title="Bestech Park View Altura">Bestech Park View Altura</a></div>
+           </div>
+         </div>
+       </div>
+     </footer>
+     <div class="enq_btn" data-toggle="modal" data-target="#ftrForm"><i class="fas fa-envelope"></i></div>
+    
+     <div class="aside_btn">
+       <div class="asd_item1"><i class="fas fa-ellipsis-v"></i></div>
+       <div class="asd_item2"><input type="button" class="btn btn-primary btn-block" value="Enquire Now" data-toggle="modal" data-target="#ftrForm"></div>
+     </div>
+     <div class="display_popup">
+       <ul>
+         <li><a href="tel:+911149500026" onclick='schedule_click("Mob Call Now","Mob Call Now","Mob Call Now");'><i class="fas fa-phone-alt"></i> <span>Call Now</span></a>
+                                                </li>
+                                                <li><a href="https://api.whatsapp.com/send?phone=+919811182528&amp;text=Hey%20I'm%20interested%20in%20Silverglades%20Hightown%20Residences%20Gurgaon." rel="nofollow" onclick='schedule_click("Mob Whatsapp Now","Mob Whatsapp Now","Mob Whatsapp Now");'><i class="fab fa-whatsapp"></i> <span>Whatsapp Now</span></a></li>
+                                                </ul>
+                                    </div>
+    
+                                    <div class="modal fade" id="ftrForm" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content shadow">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="h4 pb-3 text-center font-weight-bold">EXPRESS YOUR INTEREST</div>
+                                                    <div class="mmessages" id="modalcontact-div" style="display:none;">
+                                                        <div id="modalpost_status"></div>
+                                                    </div>
+                                                    <form role="form" name="google-sheet3" method="post" class="contactform">
+                                                        <div class="mb-3">
+                                                            <span class="invalid_name" style="display : none; color : #f50606;">Please enter valid name.</span>
+                                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                                        </div>
+    
+                                                        <div class="mb-3">
+                                                            <span class="invalid_email" style="display : none; color : #f50606;">Please enter valid Email.</span>
+                                                            <input type="email" name="email" class="form-control" placeholder="Email">
+                                                        </div>
+    
+                                                        <input type="hidden" name="pname" value="Hightown Residences Gurgaon" />
+    
+                                                        <div class="mb-3"><select name="country" onchange="countrycode(this.options[this.selectedIndex].value)" class="form-control country" required="required">
+                   <option value="">Select Country</option>
+                 </select>
+                                                        </div>
+    
+                                                        <input type="hidden" name="comment" value="I need to know more about this..">
+                                                        <input type="hidden" name="utm_source" value="ipaddress223.190.83.82">
+                                                        <input type="hidden" name="deviceInfo" value="">
+    
+                                                        <input type="hidden" name="event_cat" class="event_cat" value="MobileFormSubmit">
+    
+                                                        <div class="mb-3">
+                                                            <span class="invalid_phone" style="display : none; color : #f50606;">Please enter valid Phone Number.</span>
+                                                            <div class="input-group">
+                                                                <!-- <div class="input-group-prepend"><span class="input-group-text phonecode"></span></div> -->
+                                                                <input type="tel" name="phone" placeholder="Phone No." class="form-control phone" value="" required>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" name="Submit" class="btn btn-primary btn-block addenqsubmit" id="modalcontact-form-btn"> SUBMIT</button>
+    
+                                                    </form>
+    
+                                                    <div class="pol_con">
+                                                        <div class="our_pro"><span>We Deliver</span></div>
+                                                        <ul>
+                                                            <li><i class="far fa-check-circle"></i><span>Assured<br> Privacy</span></li>
+                                                            <li><i class="fas fa-headset"></i><span>Expert<br> Consultation</span></li>
+                                                            <li><i class="fas fa-car-alt"></i><span>Free<br> Site Visit</span></li>
+                                                            <li><i class="fas fa-rupee-sign"></i><span>Best<br> Price</span></li>
+                                                        </ul>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <link rel="preconnect" href="https://fonts.gstatic.com">
+                                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+                                    <link rel="stylesheet" href="http://www.hightownresidences.org.in/assets/css/jquery.fancybox.min.css" />
+                                    <link rel="stylesheet" rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                                    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+                                    <script type="text/javascript" src="http://www.hightownresidences.org.in/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+                                    <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+                                    <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+                                    <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
+                                    <script>
+                                    
+
+
+
+                                        const scriptURL1 = 'https://script.google.com/macros/s/AKfycbxsfi-hl7IqcfGXRf5bUXJDYNUX2_RwblL50qLr_texsUDLKzupYebsw05e_U20Rqkx/exec'
+                                        
+
+                                        const form = document.forms['google-sheet']
+                                        const form2=document.forms['google-sheet2']
+                                        const form3=document.forms['google-sheet3']
+                                        const form4=document.forms['google-sheet4']
+                                        const form5=document.forms['google-sheet5']
+                                        const form6=document.forms['google-sheet6']
+
+                                   
+                                // popup form code
+                                // Function to open the popup
+                                function openPopup() {
+                                    document.getElementById('overlay').style.display = 'block';
+                                    document.getElementById('popup-container').style.display = 'block';
+                                }
+
+                                // Function to close the popup
+                                function closePopup() {
+                                    document.getElementById('overlay').style.display = 'none';
+                                    document.getElementById('popup-container').style.display = 'none';
+                                }
+
+                                // Function to submit the form and close the popup
+                                function submitForm() {
+                                    // You can add your form submission logic here
+                                    // For now, let's just close the popup
+                                    clearInterval(myInterval);
+                                    closePopup();
+                                }
+
+                                // Open the popup when the page loads
+                                openPopup();
+
+                                // Set a timer to open the popup every 5 minutes
+                               const myInterval= setInterval(function () {
+                                    openPopup();
+                                }, 10000); // 5 minutes in milliseconds
+                                      
+                                        form.addEventListener('submit', e => {
+                                          e.preventDefault()
+                                          fetch(scriptURL1, { method: 'POST', body: new FormData(form)})
+                                            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                            .catch(error => console.error('Error!', error.message))
+                                        })
+                                        form2.addEventListener('submit', e => {
+                                          e.preventDefault()
+                                          fetch(scriptURL1, { method: 'POST', body: new FormData(form2)})
+                                            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                            .catch(error => console.error('Error!', error.message))
+                                        })
+                                        form3.addEventListener('submit', e => {
+                                          e.preventDefault()
+                                          fetch(scriptURL1, { method: 'POST', body: new FormData(form3)})
+                                            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                            .catch(error => console.error('Error!', error.message))
+                                        })
+                                        form4.addEventListener('submit', e => {
+                                          e.preventDefault()
+                                          fetch(scriptURL1, { method: 'POST', body: new FormData(form4)})
+                                            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                            .catch(error => console.error('Error!', error.message))
+                                        })
+                                        form5.addEventListener('submit', e => {
+                                          e.preventDefault()
+                                          fetch(scriptURL1, { method: 'POST', body: new FormData(form5)})
+                                            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                            .catch(error => console.error('Error!', error.message))
+                                        })
+                                        form6.addEventListener('submit', e => {
+                                          e.preventDefault()
+                                          fetch(scriptURL1, { method: 'POST', body: new FormData(form6)})
+                                            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                            .catch(error => console.error('Error!', error.message))
+                                        })
+                                      </script>
+                            
+                                    <script>
+                                        $(function() {
+                                            $('.lazy').Lazy({
+                                                delay: 2000,
+                                            });
+                                        });
+                                    </script>
+    
+                                    <script type="text/javascript">
+                                        $(window).scroll(function() {
+                                            if ($(this).scrollTop() > 530) {
+                                                $('.enq_btn').fadeIn('fast');
+                                            } else {
+                                                $('.enq_btn').fadeOut('fast');
+                                            }
+                                        });
+                                        $(document).ready(function() {
+                                            $(function() {
+                                                initDropDowns($(".micro-menu"));
+                                            });
+    
+                                            function initDropDowns(microMenu) {
+                                                microMenu.children(".micro-site-hamburger").on("click", function() {
+                                                    var thisTrigger = jQuery(this),
+                                                        thisMenu = thisTrigger.parent(),
+                                                        thisPanel = thisTrigger.next();
+                                                    if (thisMenu.hasClass("is-open")) {
+                                                        thisMenu.removeClass("is-open");
+                                                        jQuery(document).off("click");
+                                                        thisPanel.off("click");
+                                                    } else {
+    
+                                                        microMenu.removeClass("is-open");
+                                                        thisMenu.addClass("is-open");
+                                                        jQuery(document).on("click", function() {
+                                                            microMenu.removeClass("is-open");
+                                                        });
+                                                        thisPanel.on("click", function(e) {
+                                                            e.stopPropagation();
+                                                        });
+                                                    }
+                                                    return false;
+                                                });
+                                            };
+    
+                                            $('.asd_item1').on('click scroll', function(e) {
+                                                $('.display_popup').stop(true).slideToggle(20);
+                                            });
+                                            $(document).on('click scroll', function(e) {
+                                                if (!$(e.target).closest('.asd_item1').length) {
+                                                    $('.display_popup').stop(true).slideUp(20);
+                                                }
+                                            });
+                                        });
+                                    </script>
+    
+                                    <script>
+                                        $('#pgDown,.dsk_enq').click(function() {
+                                            $([document.documentElement, document.body]).animate({
+                                                scrollTop: $(".hm_des,.pnav_bar").offset().top - 50
+                                            }, 100);
+                                        });
+                                    </script>
+    
+                                    <!-- <script>
+                                        $(document).ready(function() {
+                                            $(".contactform").submit(function(e) {
+                                                e.preventDefault();
+                                                $(".addenqsubmit").attr('disabled', true);
+                                                $.ajax({
+                                                    url: "function.php?action=add_contact",
+                                                    type: 'POST',
+                                                    contentType: false,
+                                                    processData: false,
+                                                    data: new FormData(this),
+                                                    dataType: "json",
+                                                    success: function(results) {
+                                                        $(".addenqsubmit").attr('disabled', false);
+                                                        if (results.class == "invalid_name") {
+                                                            $(".invalid_name").show();
+                                                            $(".invalid_email").hide();
+                                                            $(".invalid_phone").hide();
+                                                        } else if (results.class == "invalid_email") {
+    
+                                                            $(".invalid_name").hide();
+                                                            $(".invalid_email").show();
+                                                            $(".invalid_phone").hide();
+    
+                                                        } else if (results.class == "invalid_phone") {
+    
+                                                            $(".invalid_name").hide();
+                                                            $(".invalid_email").hide();
+                                                            $(".invalid_phone").show();
+    
+                                                        } else if (results.class == "blank_comment") {
+                                                            $(".invalid_name").hide();
+                                                            $(".invalid_email").hide();
+                                                            $(".invalid_phone").hide();
+                                                            $(".fail").show();
+                                                        } else if (results.class == "fail") {
+                                                            $(".invalid_name").hide();
+                                                            $(".invalid_email").hide();
+                                                            $(".invalid_phone").hide();
+                                                            $(".fail").show();
+                                                        } else if (results.class == "already_exist") {
+                                                            window.location.href = 'thank-you.html';
+                                                        } else {
+                                                            window.location.href = 'thank-you.html?event=' + results.event + '&activationKey=' + results.activationKey;
+                                                        }
+                                                    },
+                                                    error: function() {
+                                                        //swal("", "Network Error", "error");
+                                                        $(".addenqsubmit").attr('disabled', false);
+                                                    }
+                                                });
+                                            });
+                                        });
+                                    </script> -->
+    
+                                    <script src="assets/js/global.js"></script>
+                                    <script src="assets/js/scrolling-nav.js"></script>
+                                    <script>
+                                        $(".fancybox").fancybox({
+                                            type: "iframe",
+                                            // other API options
+                                        });
+                                    </script>
+                                    <script>
+                                        $(document).ready(function() {
+                                            $('#downloadForm input[type="submit"]').val('Download');
+                                            $('#consulForm input[type="submit"]').val('Get Consultation');
+                                            $('#SitevisitForm input[type="submit"]').val('Free Site Visit');
+                                            $('#BestdealForm input[type="submit"]').val('Grab Best Deal');
+                                            $('.ameni_slide,.club_slide').slick({
+                                                infinite: false,
+                                                slidesToShow: 1,
+                                                slidesToScroll: 1,
+                                                autoplay: 'auto'
+                                            });
+    
+    
+                                            $('.specific_slider').slick({
+                                                infinite: false,
+                                                slidesToShow: 2,
+                                                slidesToScroll: 1,
+                                                dots: true,
+                                                responsive: [{
+                                                    breakpoint: 767,
+                                                    settings: {
+                                                        dots: false,
+                                                        slidesToShow: 1,
+                                                        slidesToScroll: 1
+                                                    }
+                                                }]
+                                            });
+                                            $('.floor_plan').slick({
+                                                infinite: false,
+                                                slidesToShow: 2,
+                                                slidesToScroll: 1,
+                                                responsive: [{
+                                                    breakpoint: 767,
+                                                    settings: {
+                                                        slidesToShow: 1,
+                                                        slidesToScroll: 1
+                                                    }
+                                                }]
+                                            });
+    
+                                            $('.gallthumb').slick({
+                                                infinite: false,
+                                                slidesToShow: 5,
+                                                slidesToScroll: 4,
+                                                autoplay: 'auto',
+                                                responsive: [{
+                                                        breakpoint: 1024,
+                                                        settings: {
+                                                            slidesToShow: 4,
+                                                            slidesToScroll: 3,
+                                                            infinite: true,
+                                                            dots: true
+                                                        }
+                                                    },
+                                                    {
+                                                        breakpoint: 600,
+                                                        settings: {
+                                                            slidesToShow: 2,
+                                                            slidesToScroll: 1
+                                                        }
+                                                    },
+                                                    {
+                                                        breakpoint: 480,
+                                                        settings: {
+                                                            slidesToShow: 1,
+                                                            slidesToScroll: 1
+                                                        }
+                                                    }
+                                                ]
+                                            });
+                                        });
+    
+    
+                                        var pos = 0;
+                                        var isScrolling = false;
+                                        var id = 1;
+                                        $(window).scroll(function() {
+                                            if (!isScrolling) {
+                                                var curPos = $(this).scrollTop();
+                                                if (curPos > pos) {
+                                                    if (id < 2) {
+                                                        id++;
+                                                        //alert("test");
+                                                        $('img[data-src]').each(function() {
+                                                            $(this).attr('src', $(this).attr('data-src')).removeAttr('data-src');
+                                                        });
+    
+                                                        $(".sample-flat").attr('src', 'http://www.hightownresidences.org.in/assets/images/sample-flat-thumb.webp');
+                                                        $("#master_plan_img").attr('src', 'http://www.hightownresidences.org.in/assets/images/master-plan.webp');
+                                                        $("#masterimage").attr('href', 'http://www.hightownresidences.org.in/assets/images/master-plan.webp');
+                                                        $(".flrsection1").attr('src', 'http://www.hightownresidences.org.in/assets/floor-plan/3bhk-type-a-2150-sqft.webp');
+                                                        $(".flrsection1").attr('href', 'http://www.hightownresidences.org.in/assets/floor-plan/3bhk-type-a-2150-sqft.webp');
+                                                        $(".flrsection2").attr('src', 'http://www.hightownresidences.org.in/assets/floor-plan/3bhk-type-b-2150-sqft.webp');
+                                                        $(".flrsection2").attr('href', 'http://www.hightownresidences.org.in/assets/floor-plan/3bhk-type-b-2150-sqft.webp');
+                                                        $(".flrsection3").attr('src', 'http://www.hightownresidences.org.in/assets/floor-plan/3bhk-type-c-2500-sqft.webp');
+                                                        $(".flrsection3").attr('href', 'http://www.hightownresidences.org.in/assets/floor-plan/3bhk-type-c-2500-sqft.webp');
+                                                        $(".flrsection4").attr('src', 'http://www.hightownresidences.org.in/assets/floor-plan/4bhk-3300-sqft.webp');
+                                                        $(".flrsection4").attr('href', 'http://www.hightownresidences.org.in/assets/floor-plan/4bhk-3300-sqft.webp');
+                                                        $(".gal1").attr('src', 'http://www.hightownresidences.org.in/assets/club/01-drop-off-zone.webp');
+                                                        $(".gal1").attr('href', 'http://www.hightownresidences.org.in/assets/club/01-drop-off-zone.webp');
+                                                        $(".gal2").attr('src', 'http://www.hightownresidences.org.in/assets/club/02-entrance-lobby.webp');
+                                                        $(".gal2").attr('href', 'http://www.hightownresidences.org.in/assets/club/02-entrance-lobby.webp');
+                                                        $(".gal3").attr('src', 'http://www.hightownresidences.org.in/assets/club/03-cafe.webp');
+                                                        $(".gal3").attr('href', 'http://www.hightownresidences.org.in/assets/club/03-cafe.webp');
+                                                        $(".gal4").attr('src', 'http://www.hightownresidences.org.in/assets/club/04-swimming-pool.webp');
+                                                        $(".gal4").attr('href', 'http://www.hightownresidences.org.in/assets/club/04-swimming-pool.webp');
+                                                        $(".gal5").attr('src', 'http://www.hightownresidences.org.in/assets/club/05-mini-movie-theatre.webp');
+                                                        $(".gal5").attr('href', 'http://www.hightownresidences.org.in/assets/club/05-mini-movie-theatre.webp');
+                                                        $(".gal6").attr('src', 'http://www.hightownresidences.org.in/assets/club/06-opti-golf.webp');
+                                                        $(".gal6").attr('href', 'http://www.hightownresidences.org.in/assets/club/06-opti-golf.webp');
+                                                        $(".gal7").attr('src', 'http://www.hightownresidences.org.in/assets/club/07-gymnasium.webp');
+                                                        $(".gal7").attr('href', 'http://www.hightownresidences.org.in/assets/club/07-gymnasium.webp');
+                                                        $(".video-conf").attr('src', 'http://www.hightownresidences.org.in/assets/images/video-conf.png');
+                                                        $(".decision-corner").attr('src', 'http://www.hightownresidences.org.in/assets/images/decision-corner.svg');
+                                                        $(".elevation-image").attr('src', 'http://www.hightownresidences.org.in/assets/images/elevation-image.webp');
+                                                        $(".construction-update").attr('src', 'http://www.hightownresidences.org.in/assets/images/constructions-thumb.webp');
+                                                        $("#description").attr('src', 'http://www.hightownresidences.org.in/assets/images/flower-bg.png');
+                                                        $("#Localities").attr('data-src', 'http://www.hightownresidences.org.in/assets/images/location-connectivity.webp');
+                                                        $(".amenities6").attr('src', 'http://www.hightownresidences.org.in/assets/amenities/amenity-06.webp');
+                                                        $(".amenities5").attr('src', 'http://www.hightownresidences.org.in/assets/amenities/amenity-05.webp');
+                                                        $(".amenities4").attr('src', 'http://www.hightownresidences.org.in/assets/amenities/amenity-04.webp');
+                                                        $(".amenities3").attr('src', 'http://www.hightownresidences.org.in/assets/amenities/amenity-03.webp');
+                                                        $(".amenities2").attr('src', 'http://www.hightownresidences.org.in/assets/amenities/amenity-02.webp');
+                                                        $(".amenities1").attr('src', 'http://www.hightownresidences.org.in/assets/amenities/amenity-01.webp');
+                                                        $(".why-invest-img").attr('src', 'http://www.hightownresidences.org.in/assets/images/silverglades-gurgaon.webp');
+                                                    }
+                                                }
+                                                isScrolling = true;
+                                                pos = curPos;
+    
+                                            }
+    
+                                        });
+                                    </script>
+    </body>
+</html>
